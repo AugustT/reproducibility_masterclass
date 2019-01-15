@@ -1,0 +1,41 @@
+---
+title: "Averaging numbers for Steve"
+author: "Tom August"
+date: "15 January 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+Steve asked me to average an bunch of numbers
+
+Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.
+
+## Load up the numbers 
+
+```{r data}
+x <- c(5, 6, 8, 9, 2, 4, 5,
+       2, 5, 6, 3, 6, 5)
+```
+
+It is a simple set of numbers, I'm not sure why Steve could not do this himself.
+
+## Plot numbers
+
+```{r plot}
+plot(x)
+```
+
+This is possibly the most boring plot I have ever made.
+
+## Create the average
+
+Steve Did not say if he wanted the median or the mean. I assume he wanted the mean as the numbers look pretty normally distributed.
+
+```{r}
+mean(x)
+```
