@@ -58,6 +58,5 @@ richness_abund
 
 # Experiment with other demo R scripts in the "4_R_Markdown" folder
 # or your own scripts for further practice! 
-# - RMarkdown_Demo_1.R 
-# - RMarkdown_Demo_2.R 
-# - RMarkdown_Demo_3.R
+# - RMarkdown_Tutorial2.R 
+# - RMarkdown_Tutorial3.R
