@@ -1,0 +1,12 @@
+User inputs define graph http://shiny.rstudio.com/gallery/kmeans-example.html 
+There are a range of widgets: http://shiny.rstudio.com/gallery/widget-gallery.html
+Widgets can be customised: http://shiny.rstudio.com/gallery/sliders.html 
+You can output tables: http://shiny.rstudio.com/gallery/basic-datatable.html
+People can download files: http://shiny.rstudio.com/gallery/file-download.html
+Or a report (knitr): http://shiny.rstudio.com/gallery/download-knitr-reports.html
+You can specify tabs: http://shiny.rstudio.com/gallery/navbar-example.html 
+And layout: http://shiny.rstudio.com/gallery/retirement-simulation.html 
+Submit button: http://shiny.rstudio.com/gallery/submitbutton-demo.html 
+Interacting with plot: http://shiny.rstudio.com/gallery/plot-interaction-selecting-points.html
+Or with Google charts: http://shiny.rstudio.com/gallery/movie-explorer.html
+Maps can be done ++ : http://shiny.rstudio.com/gallery/superzip-example.html
