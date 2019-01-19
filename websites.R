@@ -21,12 +21,3 @@ browseURL('https://ourcodingclub.github.io/2017/02/27/git.html')
 
 # Gallery of shiny applications
 browseURL('https://shiny.rstudio.com/gallery/')
-
-
-
-
-
-
-
-
-
