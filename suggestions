@@ -1,8 +1,1 @@
 ## Notes of things to change in future years ##
-
-- Make sure people test the installation of git first,
-  macs can have issues finding the exec, it appeared in 
-  usr/local/bin/git I think, you have to change this
-  manually. Also go to tools>version control also helps
-- Shiny practical may be too hard for beginners. Make a couple
-  of easier ones, or walk through them with the class
