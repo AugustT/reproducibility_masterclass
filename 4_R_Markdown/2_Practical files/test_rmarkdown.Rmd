@@ -1,0 +1,72 @@
+---
+title: "Awesome stuff"
+author: "Dr Tom August"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+Use this example R script to practice compiling an R Markdown file, using the tutorial materials provided at: ourcodingclub.github.io/2016/11/24/rmarkdown-1.html
+
+Follow through the tutorial to make a well commented, easy to follow record of what is going on so that others can easily follow.
+
+```{r, message=FALSE}
+# Loading packages
+library(dplyr)
+```
+
+# Loading biodiversity data
+This data is a publicly available dataset of occurrence records for many animal, plant, and fungi species, for 2000-2016 from the NBN Gateway
+
+```{r}
+edidiv <- read.csv("edidiv.csv")
+
+# Constructing a table of species richness in each taxonomic group
+
+richness <- 
+  edidiv %>%
+  group_by(taxonGroup) %>%
+  summarise(Species_richness = n_distinct(taxonName))
+
+richness
+```
+
+Now i need to create a bar plot
+
+```{r}
+# Creating a barplot of species richness in each taxonomic group
+
+barplot(richness$Species_richness, 
+        names.arg = richness$taxonGroup, 
+        xlab = "Taxa", ylab = "Number of species", 
+        ylim = c(0,600)
+) 
+```
+
+Bar plot done, that looks okay
+
+```{r}
+# Determining what the most common species is in each taxonomic group 
+
+max_abund <-
+  edidiv %>%
+  group_by(taxonGroup) %>%
+  summarise(taxonName = names(which.max(table(taxonName))))
+
+max_abund
+```
+
+Okay, got the most common species, now i need to get these together
+
+```{r}
+# Joining the two data frames together, using "taxonGroup" as the reference
+
+richness_abund <- inner_join(richness, max_abund, by = "taxonGroup")
+
+# Renaming the headers of the tables, and viewing the data frame
+
+richness_abund <- rename(richness_abund, Most_abundant =  taxonName, Taxon = taxonGroup)
+
+richness_abund
+```
+
+Taadaa
