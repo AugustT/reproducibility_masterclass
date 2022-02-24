@@ -14,7 +14,7 @@ library(dplyr)
 # This data is a publicly available dataset of occurrence records for many animal, 
 # plant, and fungi species, for 2000-2016 from the NBN Gateway
 
-edidiv <- read.csv("4_R_Markdown/edidiv.csv")
+edidiv <- read.csv("4_R_Markdown/2_Practical files/edidiv.csv")
 
 # Constructing a table of species richness in each taxonomic group
 
